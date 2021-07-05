@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root {
+    --animation-time: 0.3s
+}
+html {
+    font-size:1vw;
+}
+* {
+    margin:0;
+}
+
+body {
+    background-color: #F2F2F2;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    height:29vw;
+    width:50vw;
+    display: flex;
+}
+
+.card {
+    width:calc(100%/3);
+    position:relative;
+}
+#left {
+    background-color:#E28525;
+    border-radius:9px 0 0 9px;
+}
+#middle {
+    background-color:#016972;
+}
+#right {
+    background-color:#00403F;
+    border-radius:0 9px 9px 0;
+}
+.wrapper {
+    position:absolute;
+    top:10%;
+    right:15%;
+    left:15%;
+    bottom:15%;
+}
+p {
+    line-height:1.6rem;
+    font-size:0.8rem;
+    text-align: left;
+    color:hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+h1 {
+    color:#FFFFFF;
+    margin:15% 0 15% 0;
+    font-size:2.4rem;
+    font-family: 'Big Shoulders Display' , 'cursive';
+}
+button {
+    height:14%;
+    width:72%;
+    border:none;
+    border-radius: 35px;
+    margin-top:40%;
+    font-size:0.9rem;
+    font-family: 'Lexend Deca', sans-serif;
+    transition: background-color var(--animation-time), border var(--animation-time), color var(--animation-time);
+    
+}
+button:hover {
+    color:#F2F2F2 !important;
+    background-color:inherit;
+    border:3px solid #F2F2F2;
+    cursor:pointer
+}
+
+#left-button {
+    color:#E28525;
+}
+
+#middle-button {
+    color:#016972;
+}
+#right-button {
+    color:#00403F;
+}
+
+
+.svg-wrapper > img {
+    display: block;
+    width:30.15%;
+}
+
+/* FOR MOBILES */ 
+
+@media only screen and (max-width: 412px)
+{
+    html {
+        font-size:1.5vh;
+    }
+
+    body {
+        height:170vh;
+    }
+    .main {
+        height:145vh;
+        width:70vw;
+        flex-direction: column;
+    }
+    .card {
+        height:calc(100%/3);
+        width:100%;
+        position:relative;
+    }
+
+    p {
+        
+        font-size:1rem;
+    }
+    button {
+        margin-top:20%;
+    }
+    #left {
+        border-radius:9px 9px 0 0;
+    }
+
+    #right {
+        border-radius:0 0 9px 9px;
+    }
+    
+}
