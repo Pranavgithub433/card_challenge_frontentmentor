@@ -9,6 +9,7 @@ html {
 }
 * {
     margin:0;
+    box-sizing: border-box;
 }
 
 body {
@@ -41,11 +42,8 @@ body {
     border-radius:0 9px 9px 0;
 }
 .wrapper {
-    position:absolute;
-    top:10%;
-    right:15%;
-    left:15%;
-    bottom:15%;
+    height: 100%;
+    padding:13%;
 }
 p {
     line-height:1.6rem;
@@ -62,8 +60,8 @@ h1 {
     font-family: 'Big Shoulders Display' , 'cursive';
 }
 button {
-    height:14%;
-    width:72%;
+    height:12%;
+    width:67%;
     border:none;
     border-radius: 35px;
     margin-top:40%;
